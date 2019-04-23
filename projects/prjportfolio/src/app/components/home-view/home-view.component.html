@@ -1,0 +1,19 @@
+<app-carousel *ngIf="!isChildRouteLoaded"></app-carousel>
+<main class="container"> 
+      
+<div class="row" *ngIf="!isChildRouteLoaded">
+
+        <h1 i18n="User welcome|An introduction header for this sample@@introductionHeader">
+                Helloo i18n!
+              </h1>
+              <ng-container i18n="@@textinfo">I don't output any element</ng-container>
+             
+<app-services></app-services>
+<hr class="my-5">
+<app-panel></app-panel>
+</div>
+<router-outlet  *ngIf="isChildRouteLoaded"></router-outlet>
+</main>
+
+
+
