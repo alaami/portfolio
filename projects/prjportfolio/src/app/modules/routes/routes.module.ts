@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ServicesComponent } from './../../components/components/services/services.component';
 import { IntegrationViewComponent } from './../../components/integration-view/integration-view.component';
 import { ConseilViewComponent } from './../../components/conseil-view/conseil-view.component';
+import { ServiceGereViewComponent } from './../../components/service-gere-view/service-gere-view.component';
 import { ProfileComponent } from './../../components/profile/profile.component';
 import { ContactComponent } from './../../components/contact/contact.component';
 const routes: Routes = [
@@ -26,7 +27,9 @@ const routes: Routes = [
     path: 'services', component: ServicesComponent, children: [
             { path: 'development', component: DevelopmentViewComponent },
             { path: 'integration', component: IntegrationViewComponent }, 
-            { path: 'conseil', component: ConseilViewComponent }  
+            { path: 'conseil', component: ConseilViewComponent },
+            { path: 'service-gere', component: ServiceGereViewComponent }
+            
 	]
   }
 

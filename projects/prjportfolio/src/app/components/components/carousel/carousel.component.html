@@ -1,44 +1,56 @@
  <!-- Optional captions -->
   <div class="row">
-      <div class="col-md-12 mx-auto text-center mt-5">
+    <div class="col-md-12 mx-auto text-center mt-0">
         <!--Carousel Wrapper-->
-        <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'fade'">
+        <mdb-carousel [isControls]="true" class="carousel slide carousel-fade slidehome" [animation]="'fade'">
           <!--First slide-->
           <mdb-carousel-item>
             <div class="view w-100">
-              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+              <img class="d-block w-100" src="assets/images/service-conseil.jpg" alt="service conseil">
               <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
             </div>
             <div class="carousel-caption">
-              <h3 class="h3-responsive">Light mask</h3>
-              <p>First text</p>
+              <h3 class="h3-responsive" i18n="@@slideConseilTitre">Abc</h3>
+              <p i18n="@@slideConseil">Notre expertise permettra d’établir une proposition des meilleures options disponibles sur le marché afin de vous aider à atteindre vos objectifs spécifiques.</p>
             </div>
           </mdb-carousel-item>
           <!--/First slide-->
           <!--Second slide-->
           <mdb-carousel-item>
             <div class="view w-100">
-              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
-              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+              <img class="d-block w-100" src="assets/images/Development-integration-office.jpg" alt="Development">
+              <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
             </div>
             <div class="carousel-caption">
-              <h3 class="h3-responsive">Strong mask</h3>
-              <p>Secondary text</p>
+              <h3 class="h3-responsive" i18n="@@slideDevTitre">Développement</h3>
+              <p i18n="@@slideDev">Occupez-vous de vos objectifs, on s’occupe du reste.</p>
             </div>
           </mdb-carousel-item>
           <!--/Second slide-->
           <!--Third slide-->
           <mdb-carousel-item>
             <div class="view w-100">
-              <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
-              <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+              <img class="d-block w-100" src="assets/images/service-integration.jpg" alt="Intégration">
+              <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
             </div>
             <div class="carousel-caption">
-              <h3 class="h3-responsive">Slight mask</h3>
-              <p>Third text</p>
+              <h3 class="h3-responsive" i18n="@@slideIntegrationTitre">Intégration</h3>
+              <p i18n="@@slideIntegration">Nous abordons une approche cohérente pour développer une infrastructure TI de qualité.</p>
             </div>
           </mdb-carousel-item>
           <!--/Third slide-->
+          <!--forth slide-->
+          <mdb-carousel-item>
+            <div class="view w-100">
+              <img class="d-block w-100" src="assets/images/service-gerrer.jpg" alt="Service géré">
+              <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive" i18n="@@slideServiceGereTitre">Service géré</h3>
+              <p i18n="@@slideServiceGere">Profitez bien du monde numérique</p>
+            </div>
+          </mdb-carousel-item>
+          <!--/forth slide-->
         </mdb-carousel>
         <!--/.Carousel Wrapper-->
       </div>

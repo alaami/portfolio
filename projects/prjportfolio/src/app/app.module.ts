@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormioModule } from 'angular-formio';
 //import { localeFr } from '@angular/common/locales/fr';
 //import { localeFrExtra } from '@angular/common/locales/extra/fr';
 
@@ -20,6 +21,10 @@ import { PanelComponent } from './components/components/panel/panel.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactFormComponent } from './components/components/contact-form/contact-form.component';
+import { ListGroupsComponent } from './components/components/list-groups/list-groups.component';
+import { IntegrationBlocsComponent } from './components/components/integration-blocs/integration-blocs.component';
+import { ServiceGereViewComponent } from './components/service-gere-view/service-gere-view.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +39,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CarouselComponent,
     PanelComponent,
     ProfileComponent,
-    ContactComponent
+    ContactComponent,
+    ContactFormComponent,
+    ListGroupsComponent,
+    IntegrationBlocsComponent,
+    ServiceGereViewComponent
   ],
   imports: [
     MDBBootstrapModule.forRoot(),
@@ -42,7 +51,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     RoutesModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

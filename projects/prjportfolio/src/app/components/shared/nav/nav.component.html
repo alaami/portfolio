@@ -12,7 +12,7 @@
     <ul class="navbar-nav ml-auto">
         <li class="nav-item waves-light white-text d-flex flex-column justify-content-center" mdbWavesEffect>
           
-          <a (click)="back()">
+          <a (click)="back()" i18n="@@lienback">
               <fa-icon [icon]="faArrowCircleLeft"></fa-icon>
              Go Back
             </a>
@@ -20,32 +20,36 @@
           </li>
       <li class="nav-item">
           
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/">
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/" i18n="@@lienhome">
           <fa-icon [icon]="faHome"></fa-icon>
           Home
         </a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link waves-light" mdbWavesEffect routerLink="/profile">About Us
+        <a class="nav-link waves-light" mdbWavesEffect routerLink="/profile" i18n="@@lienaboutus">
+          <fa-icon [icon]="faInfoCircle"></fa-icon>
+          About Us
         </a>
       </li>
       
            <!-- Dropdown -->
            <li class="nav-item dropdown" dropdown>
-            <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" href="/services">
+            <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light">
+              <fa-icon [icon]="faHandPointDown"></fa-icon>
               Services
               <span class="caret"></span>
             </a>
             <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/development">Development</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/integration">Integration</a>
-              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/conseil">Conseil</a>
-              <div class="divider dropdown-divider"></div>
-              <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/development" i18n="@@liendev">Développment</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/integration" i18n="@@lienintegr">Integration</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/conseil" i18n="@@lienconseil">Conseil</a>
+              <a class="dropdown-item waves-light" mdbWavesEffect href="/services/service-gere" i18n="@@lienservicegere">Service géré</a>
             </div>
           </li>
       <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact">Contact Us</a>
+          <a class="nav-link waves-light" mdbWavesEffect routerLink="/contact" i18n="@@liencontact">
+            <fa-icon [icon]="faAddressCard"></fa-icon>
+            Contact Us</a>
       </li>
     </ul>
     <!-- Links -->

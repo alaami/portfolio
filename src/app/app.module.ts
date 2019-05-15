@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { FormsModule } from '@angular/forms';
 import { DevelopmentViewComponent } from './projects/prjportfolio/src/app/components/development-view/development-view.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DevelopmentViewComponent
+    DevelopmentViewComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

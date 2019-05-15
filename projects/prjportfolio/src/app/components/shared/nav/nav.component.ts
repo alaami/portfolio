@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
-import { faArrowCircleLeft,faHome  } from '@fortawesome/free-solid-svg-icons';
+import { faArrowCircleLeft,faHome,faInfoCircle,faAddressCard,faHandPointDown  } from '@fortawesome/free-solid-svg-icons';
 //import { far } from '@fortawesome/free-regular-svg-icons';
 //import { fab } from '@fortawesome/free-brands-svg-icons';
 @Component({
@@ -11,7 +11,10 @@ import { faArrowCircleLeft,faHome  } from '@fortawesome/free-solid-svg-icons';
 export class NavComponent {
   previousUrl: string;
   faArrowCircleLeft =faArrowCircleLeft;
+  faInfoCircle=faInfoCircle;
+  faAddressCard=faAddressCard;
   faHome=faHome;
+  faHandPointDown=faHandPointDown;
   constructor(private location: Location) {
   }
 
